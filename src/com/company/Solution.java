@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Solution implements problem {
@@ -30,6 +31,7 @@ public class Solution implements problem {
     	int i = 1;
     	while(i <= n) {
     		retval += i;
+    		i++;
     	}
     	
         return retval;
@@ -37,13 +39,10 @@ public class Solution implements problem {
 
 	@Override
 	public <T> List<T> reverseList(List<T> l) {
-		List<T> list = new ArrayList<>();
     	
-    	for(int i = l.size() - 1; i >= 0; i--) {
-    		list.add(l.get(i));
-    	}
+    	Collections.reverse(l);
     	
-        return list;
+        return l;
 	}
 
     
