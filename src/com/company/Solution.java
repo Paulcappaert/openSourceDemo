@@ -5,22 +5,37 @@ import java.util.List;
 public class Solution implements problem {
     @Override
     public int max(int x, int y) {
-        return 0;
+    	int max = 0; 
+    	if (x > y) {
+    		max = x; 
+    	}
+    	else {
+    		max = y; 
+    	}
+    	return max; 
+        
     }
 
     @Override
     public String reverse(String s) {
+    	
         return null;
     }
 
     @Override
     public float bestNumber() {
-        return 0;
+        return 14;
     }
 
     @Override
     public int sumDigits(int n) {
-        return 0;
+    	int sum = 0; 
+    	for (int i = 0; i < n; i++) {
+    		sum =+ i; 
+    		 
+    	}
+    	return sum; 
+       
     }
 
     @Override
