@@ -20,11 +20,17 @@ public class Solution implements problem {
 
     @Override
     public int sumDigits(int n) {
-        return 0;
+        
+		
+		return 0;
     }
 
     @Override
     public List reverseList(List l) {
-        return null;
+        List newL = new ArrayList();
+		
+		for (i = 0; i
+		
+		return null;
     }
 }
