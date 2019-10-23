@@ -12,10 +12,9 @@ public class Solution implements problem {
     public String reverse(String s) {
 
         for(int i = 0; s.length>i; i++;){ //Not done
-
         }
 
-        return  ;
+        return  " ";
     }
 
     @Override
