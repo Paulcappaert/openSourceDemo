@@ -36,7 +36,7 @@ public interface problem {
      * @param l
      * @return the reverse list of L
      */
-    List reverseList(List l);
+    <T> List<T> reverseList(List<T> l);
 
 
 }

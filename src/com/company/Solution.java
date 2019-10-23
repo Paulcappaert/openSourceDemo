@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Solution implements problem {
@@ -34,8 +35,16 @@ public class Solution implements problem {
         return retval;
     }
 
-    @Override
-    public List reverseList(List l) {
-        return null;
-    }
+	@Override
+	public <T> List<T> reverseList(List<T> l) {
+		List<T> list = new ArrayList<>();
+    	
+    	for(int i = l.size() - 1; i >= 0; i--) {
+    		list.add(l.get(i));
+    	}
+    	
+        return list;
+	}
+
+    
 }
