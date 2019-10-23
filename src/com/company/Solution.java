@@ -5,7 +5,13 @@ import java.util.List;
 public class Solution implements problem {
     @Override
     public int max(int x, int y) {
-        return 0;
+    	int max = 0;
+    	if(x > y) {
+    		max = x;
+    	}else {
+    		y = max;
+    	}
+        return max;
     }
 
     @Override
@@ -20,11 +26,17 @@ public class Solution implements problem {
 
     @Override
     public int sumDigits(int n) {
-        return 0;
+    	int sum = 0;
+    	
+    	for(int i = 0; i < n; i++) {
+    		sum += i;
+    	}
+        return sum;
     }
 
     @Override
     public List reverseList(List l) {
+    	
         return null;
     }
 }
