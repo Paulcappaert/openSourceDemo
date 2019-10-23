@@ -5,7 +5,15 @@ import java.util.List;
 public class Solution implements problem {
     @Override
     public int max(int x, int y) {
-        return x + y;
+
+        if (x > y){
+            return x;
+        }
+        else{
+            return y;
+        }
+
+        return 0;
     }
 
     @Override
