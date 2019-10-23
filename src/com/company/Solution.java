@@ -5,12 +5,19 @@ import java.util.List;
 public class Solution implements problem {
     @Override
     public int max(int x, int y) {
-        return 0;
+    	if(x>y) {
+    		return x;
+    	}
+        return y;
     }
 
     @Override
     public String reverse(String s) {
-        return null;
+    	String a = "";
+    	for(int i=s.length()-1;i>=0;i--) {
+    		a+=s.charAt(i);
+    	}
+        return a;
     }
 
     @Override
