@@ -21,7 +21,7 @@ public class Solution implements problem {
 
     @Override
     public float bestNumber() {
-        return 7;
+        return 0.000000000000001;
     }
 
     @Override
