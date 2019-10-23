@@ -5,13 +5,12 @@ import java.util.List;
 public class Solution implements problem {
     @Override
     public int max(int x, int y) {
-    	int max = 0;
     	if(x > y) {
-    		max = x;
-    	}else {
-    		y = max;
+    		return x;
     	}
-        return max;
+    	else {
+    		return y;
+    	}
     }
 
     @Override
@@ -36,7 +35,10 @@ public class Solution implements problem {
 
     @Override
     public List reverseList(List l) {
-    	
-        return null;
+    	List reverse = new ArrayList;
+    	for(int i = l.size()-1; i >= 0; i--;) {
+    		reverse.add(l.get(i));
+    	}
+        return reverse;
     }
 }
