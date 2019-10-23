@@ -3,14 +3,20 @@ package com.company;
 import java.util.List;
 
 public class Solution implements problem {
+    //HELLO WORLD
     @Override
     public int max(int x, int y) {
-        return 0;
+        if (x>y) return x;
+        else return y
     }
 
     @Override
     public String reverse(String s) {
-        return null;
+        String str = s;
+        for (int i = s.length; i > 0; i--){
+            str += str.charAt(i)
+        }
+        return str
     }
 
     @Override
